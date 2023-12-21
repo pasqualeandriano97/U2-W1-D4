@@ -1,0 +1,115 @@
+body {
+  font-family: indie flower;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+div {
+  margin: 1em;
+  padding: 0.5em;
+}
+.color1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1292892156862745) 0%,
+    rgba(249, 250, 200, 1) 25%
+  );
+  transform: rotate(352deg);
+}
+.color2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1292892156862745) 0%,
+    rgba(197, 245, 199, 1) 25%
+  );
+  transform: rotate(8deg);
+}
+.color3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1292892156862745) 0%,
+    rgba(199, 199, 241, 1) 25%
+  );
+  transform: rotate(352deg);
+}
+
+#container {
+  width: 900px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: darkgrey;
+}
+.postit {
+  z-index: 1;
+}
+
+.postit:hover {
+  transform: rotate(0) scale(1.5);
+  z-index: 2;
+}
+
+@keyframes apply {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.postit:nth-child(1) {
+  animation: apply 0.5s linear 0s 1;
+}
+
+.postit:nth-child(2) {
+  animation: apply 0.5s linear 0.5s 1;
+}
+.postit:nth-child(3) {
+  animation: apply 0.5s linear 1s 1;
+}
+.postit:nth-child(4) {
+  animation: apply 0.5s linear 1.5s 1;
+}
+.postit:nth-child(5) {
+  animation: apply 0.5s linear 2s 1;
+}
+.postit:nth-child(6) {
+  animation: apply 0.5s linear 2.5s 1;
+}
+.postit:nth-child(7) {
+  animation: apply 0.5s linear 3s 1;
+}
+.postit:nth-child(8) {
+  animation: apply 0.5s linear 3.5s 1;
+}
