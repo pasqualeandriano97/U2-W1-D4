@@ -73,6 +73,7 @@ div {
 }
 
 .postit:hover {
+  transition-duration: 1s;
   transform: rotate(0) scale(1.5);
   z-index: 2;
 }
